@@ -35,19 +35,8 @@ Installation
 npm install
 
 
-Structure
----------
+Command line
+------------
 
-project<br />
---assets<br />
-----images<br />
---dev<br />
-----css<br />
-----js<br />
-----scss<br />
---dist<br />
-----css<br />
-----images<br />
-----js<br />
---node_modules<br />
---src<br />
+**gulp** to dev<br />
+**gulp production** to generate the zip file<br />
