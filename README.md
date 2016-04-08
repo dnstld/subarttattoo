@@ -3,16 +3,14 @@
 My personal project starter
 
 
-What I using?
--------------
+## What I using?
 
 [Gulp](http://gulpjs.com)<br />
 [Sass](http://sass-lang.com)<br />
 [Browsersync](https://www.browsersync.io)<br />
 
 
-Gulp plugins
-------------
+## Gulp plugins
 
 [gulp-sass](https://www.npmjs.com/package/gulp-sass)<br />
 [gulp-sourcemaps](https://www.npmjs.com/package/gulp-sourcemaps)<br />
@@ -29,14 +27,12 @@ Gulp plugins
 [gulp-zip](https://www.npmjs.com/package/gulp-zip)<br />
 
 
-Installation
-------------
+## Installation
 
 npm install
 
 
-Command line
-------------
+## Command line
 
 **gulp** to dev<br />
 **gulp production** to generate the zip file<br />
