@@ -29,10 +29,20 @@ My personal project starter
 
 ## Installation
 
+```
 npm install
-
+```
 
 ## Command line
 
-**gulp** to dev<br />
-**gulp production** to generate the zip file<br />
+to dev...
+
+```
+gulp
+``` 
+
+to generate the zip file...
+
+```
+gulp production
+```
