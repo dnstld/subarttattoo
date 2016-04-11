@@ -12,7 +12,7 @@ var gulp             = require("gulp"),
 	imageminPngquant = require("imagemin-pngquant"),
 	deleteLines      = require("gulp-delete-lines"),
 	insertLines      = require("gulp-insert-lines"),
-	zip              = require("gulp-zip"),
+	gzip             = require("gulp-gzip"),
 
 	// js files
 	scripts          = {
@@ -123,10 +123,10 @@ gulp.task("html", function() {
 		.pipe(gulp.dest("dist"))
 });
 
-gulp.task("zip", function() {
-	return gulp.src("dist/*")
-		.pipe(zip("arquivo.zip"))
-		.pipe(gulp.dest("src"))
+gulp.task("gzip", function() {
+	return gulp.src("src/*")
+		.pipe(gzip())
+		.pipe(gulp.dest("gzip"))
 });
 
-gulp.task("production", ["css","js", "images", "html", "zip"]);
+gulp.task("production", ["css","js", "images", "html", "gzip"]);

@@ -24,7 +24,6 @@ My personal project starter
 [imagemin-pngquant](https://www.npmjs.com/package/imagemin-pngquant)<br />
 [gulp-delete-lines](https://www.npmjs.com/package/gulp-delete-lines)<br />
 [gulp-insert-lines](https://www.npmjs.com/package/gulp-insert-lines)<br />
-[gulp-zip](https://www.npmjs.com/package/gulp-zip)<br />
 
 
 ## Installation
@@ -41,7 +40,9 @@ to dev...
 gulp
 ``` 
 
-to generate the zip file inside the *src* directory...
+to prepare files for production...<br />
+save inside the *src* directory...<br />
+compress and create a gzip file inside the *gzip* directory...<br />
 
 ```
 gulp production
