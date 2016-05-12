@@ -8,11 +8,10 @@ var gulp             = require("gulp"),
 	rename           = require("gulp-rename"),
 	concatJS         = require("gulp-concat"),
 	minifyJS         = require("gulp-uglify"),
-	imageMin         = require("gulp-imagemin"),
 	imageminPngquant = require("imagemin-pngquant"),
 	deleteLines      = require("gulp-delete-lines"),
 	insertLines      = require("gulp-insert-lines"),
-	gzip             = require("gulp-gzip"),
+	plumber          = require("gulp-plumber"),
 
 	// js files
 	scripts          = {
@@ -26,6 +25,7 @@ var gulp             = require("gulp"),
 gulp.task("sass", function() {
 	gulp.src("dev/sass/main.sass")
 	    .pipe(sourcemaps.init())
+		.pipe(plumber())
 		.pipe(sass())
 		.pipe(autoprefixer())
 		.pipe(sourcemaps.write())
