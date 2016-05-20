@@ -1,0 +1,18 @@
+{
+  "name": "project-starter",
+  "description": "project starter with sass",
+  "main": "",
+  "authors": [
+    "denis toledo"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/dnstld/project-starter",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests"
+  ]
+}

@@ -8,7 +8,6 @@ var gulp             = require("gulp"),
 	rename           = require("gulp-rename"),
 	concatJS         = require("gulp-concat"),
 	minifyJS         = require("gulp-uglify"),
-	imageminPngquant = require("imagemin-pngquant"),
 	deleteLines      = require("gulp-delete-lines"),
 	insertLines      = require("gulp-insert-lines"),
 	plumber          = require("gulp-plumber"),
@@ -98,7 +97,10 @@ gulp.task("html", function() {
 			"before": /<\/body>$/,
 			"lineBefore": '        <script src="dist/js/main.min.js"></script>'
 		}))
-		.pipe(gulp.dest("dist"))
+		.pipe(rename({
+			suffix: "-production"
+		}))
+		.pipe(gulp.dest("./"))
 });
 
 gulp.task("production", ["css","js", "html"]);
