@@ -39,7 +39,7 @@ to dev...
 gulp
 ``` 
 
-to prepare files for production and save inside the *dist* directory...<br />
+to prepare files for production...<br />
 
 ```
 gulp production
