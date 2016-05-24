@@ -1,12 +1,12 @@
 {
-  "name": "project-starter",
-  "description": "project starter with sass",
+  "name": "project-starter-bootstrap",
+  "description": "project starter with bootstrap and sass",
   "main": "",
   "authors": [
     "denis toledo"
   ],
   "license": "ISC",
-  "homepage": "https://github.com/dnstld/project-starter",
+  "homepage": "https://github.com/dnstld/project-starter-bootstrap",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -14,5 +14,9 @@
     "vendor",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "bootstrap-sass": "https://github.com/twbs/bootstrap-sass.git#^3.3.6",
+    "jquery": "^2.2.4"
+  }
 }

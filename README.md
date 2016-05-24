@@ -5,8 +5,9 @@ My personal project starter
 
 ## What I using?
 
-[Gulp](http://gulpjs.com)<br />
+[Bootstrap](http://getbootstrap.com)<br />
 [Sass](http://sass-lang.com)<br />
+[Gulp](http://gulpjs.com)<br />
 [Browsersync](https://www.browsersync.io)<br />
 
 
@@ -15,7 +16,6 @@ My personal project starter
 [gulp-sass](https://www.npmjs.com/package/gulp-sass)<br />
 [gulp-sourcemaps](https://www.npmjs.com/package/gulp-sourcemaps)<br />
 [gulp-watch](https://www.npmjs.com/package/gulp-watch)<br />
-[gulp-autoprefixer](https://www.npmjs.com/package/gulp-autoprefixer)<br />
 [gulp-clean-css](https://www.npmjs.com/package/gulp-clean-css)<br />
 [gulp-rename](https://www.npmjs.com/package/gulp-rename)<br />
 [gulp-concat](https://www.npmjs.com/package/gulp-concat)<br />
@@ -29,6 +29,9 @@ My personal project starter
 
 ```
 npm install
+```
+```
+bower install
 ```
 
 ## Command line

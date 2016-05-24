@@ -3,7 +3,6 @@ var gulp             = require("gulp"),
 	sourcemaps       = require("gulp-sourcemaps"),
 	browserSync      = require("browser-sync").create(),
 	watch            = require("gulp-watch"),
-	autoprefixer     = require("gulp-autoprefixer"),
 	minifyCSS        = require("gulp-clean-css"),
 	rename           = require("gulp-rename"),
 	concatJS         = require("gulp-concat"),
@@ -14,6 +13,8 @@ var gulp             = require("gulp"),
 
 	// js files
 	scripts          = {
+		jquery: "vendor/jquery/dist/jquery.js",
+		bootstrap: "vendor/bootstrap-sass/assets/javascripts/bootstrap.js",
 		main: "dev/js/main.js"
 	};
 
@@ -26,7 +27,6 @@ gulp.task("sass", function() {
 	    .pipe(sourcemaps.init())
 		.pipe(plumber())
 		.pipe(sass())
-		.pipe(autoprefixer())
 		.pipe(sourcemaps.write())
 		.pipe(gulp.dest("dev/css"))
 		.pipe(browserSync.reload({
@@ -65,6 +65,8 @@ gulp.task("css", function() {
 
 gulp.task("js", function() {
 	return gulp.src([
+			scripts.jquery,
+			scripts.bootstrap,
 			scripts.main
 		])
 		.pipe(concatJS("main.js"))
