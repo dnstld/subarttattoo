@@ -1,6 +1,6 @@
 {
-  "name": "project-starter-bootstrap",
-  "description": "project starter with bootstrap and sass",
+  "name": "sub art tattoo",
+  "description": "sub art tattoo website",
   "main": "",
   "authors": [
     "denis toledo"
@@ -17,6 +17,7 @@
   ],
   "dependencies": {
     "bootstrap-sass": "https://github.com/twbs/bootstrap-sass.git#^3.3.6",
-    "jquery": "^2.2.4"
+    "jquery": "^2.2.4",
+    "vegas": "https://github.com/jaysalvat/vegas.git#^2.2.1"
   }
 }
