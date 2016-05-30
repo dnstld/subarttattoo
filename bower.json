@@ -1,12 +1,11 @@
 {
-  "name": "sub art tattoo",
+  "name": "subart",
   "description": "sub art tattoo website",
-  "main": "",
   "authors": [
     "denis toledo"
   ],
   "license": "ISC",
-  "homepage": "https://github.com/dnstld/project-starter-bootstrap",
+  "homepage": "https://github.com/dnstld/subarttattoo",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -17,7 +16,9 @@
   ],
   "dependencies": {
     "bootstrap-sass": "https://github.com/twbs/bootstrap-sass.git#^3.3.6",
-    "jquery": "^2.2.4",
+    "jquery": "^2.2.4"
+  },
+  "devDependencies": {
     "vegas": "https://github.com/jaysalvat/vegas.git#^2.2.1"
   }
 }
