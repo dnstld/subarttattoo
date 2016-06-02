@@ -3,6 +3,7 @@ var SubArt = {
 		"use strict";
 
 		SubArt.background();
+		SubArt.centralizaPaginaInicial();
 	},
 	background: function() {
 		"use strict";
@@ -29,7 +30,15 @@ var SubArt = {
 				{src: "assets/images/estudio/area-de-trabalho-07.jpg"}
 			]
 		});
-	}
+	},
+	centralizaPaginaInicial: function() {
+        "use strict";
+
+        $(".jumbotron").css("top", Math.max(0, (($(".pagina-inicial").height() - $(".jumbotron").outerHeight()) / 2) + $(".pagina-inicial").scrollTop()) + "px");
+        $(".jumbotron").css("left", Math.max(0, (($(".pagina-inicial").width() - $(".jumbotron").outerWidth()) / 2) + $(".pagina-inicial").scrollLeft()) + "px");
+
+        return this;
+    },
 }
 
 $(function() {
