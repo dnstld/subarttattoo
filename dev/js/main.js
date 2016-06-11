@@ -14,7 +14,7 @@ var SubArt = {
 			transition: "fade", 
 			transitionDuration: 1000,
 			color: "black",
-			animation: "random",
+			animation: "fade",
 			animationDuration: 2000,
 			delay: 3000,
 			slides: [
