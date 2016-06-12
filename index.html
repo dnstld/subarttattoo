@@ -18,7 +18,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a href="index.html" class="navbar-brand">SUB ART TATTOO</a>
+					<a href="javascript:void(0)" class="navbar-brand">SUB ART TATTOO</a>
 				</div>
 				<div id="navbar" class="collapse navbar-collapse">
 					<ul class="nav navbar-nav">
@@ -27,59 +27,47 @@
 						<li><a href="contato.html">Contato</a></li>
 					</ul>
 					<ul class="nav navbar-nav navbar-right redes-sociais">
-						<li><a href="javascript:void(0)" class="instagram" data-toggle="modal" data-target="#instagram"></a></li>
-						<li><a href="javascript:void(0)" class="facebook" data-toggle="modal" data-target="#facebook"></a></li>
+						<li><a href="https://www.instagram.com/subarttattoo" class="instagram" target="_blank"></a></li>
+						<li><a href="https://www.facebook.com/subart.com.br" class="facebook" target="_blank"></a></li>
 					</ul>
 				</div>
 			</div>
 		</nav>
-		<!-- modal instagram -->
-		<div class="modal fade" id="instagram" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-						</button>
-						<h4 class="modal-title" id="myModalLabel">Instagram</h4>
-					</div>
-					<div class="modal-body">
-					...
-					</div>
-					<div class="modal-footer">
-						<a href="javascript:void(0)" class="btn btn-danger" data-dismiss="modal">Fechar</button>
-						<a href="https://www.instagram.com/subarttattoo" class="btn btn-default" target="_blank">Visitar</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- modal facebook -->
-		<div class="modal fade" id="facebook" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-						</button>
-						<h4 class="modal-title" id="myModalLabel">Facebook</h4>
-					</div>
-					<div class="modal-body">
-					...
-					</div>
-					<div class="modal-footer">
-						<a href="javascript:void(0)" class="btn btn-danger" data-dismiss="modal">Fechar</a>
-						<a href="https://www.facebook.com/subart.com.br" class="btn btn-default" target="_blank">Visitar</a>
-					</div>
-				</div>
-			</div>
-		</div>
 		<!-- pagina inicial -->
 		<div class="container-fluid pagina-inicial">
 			<div class="jumbotron">
 		        <h1><strong>SUB ART TATTOO</strong></h1>
 		        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor, orci ornare fringilla auctor, tellus libero fringilla dolor, vulputate pretium libero elit sit amet ligula.</p>
-		        <p><a class="btn btn-lg btn-default" href="#" role="button">Conheça o estúdio</a></p>
+		        <p><a class="btn btn-lg btn-default" href="javascript:void(0)" data-toggle="modal" data-target="#agenda">Agende sua tattoo</a></p>
 		    </div>
+		</div>
+		<!-- modal agenda -->
+		<div class="modal fade" id="agenda" tabindex="-1" role="dialog" aria-labelledby="agendaLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h4 class="modal-title" id="agendaLabel">Agende sua tattoo</h4>
+					</div>
+					<div class="modal-body">
+						<form method="POST" id="formulario">
+							<div class="form-group">
+							    <input type="text" class="form-control" id="nome" placeholder="Nome">
+							</div>
+							<div class="form-group">
+							    <input type="email" class="form-control" id="email" placeholder="Email">
+							</div>
+							<textarea class="form-control" rows="3" id="mensagem" placeholder="Mensagem"></textarea>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<a href="javascript:void(0)" class="btn btn-danger" data-dismiss="modal">Fechar</a>
+						<a href="" type="submit" class="btn btn-default" target="_blank">Enviar mensagem	</a>
+					</div>
+				</div>
+			</div>
 		</div>
 
 		<!-- scripts -->
