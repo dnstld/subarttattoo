@@ -2,8 +2,9 @@ var SubArt = {
 	init: function() {
 		"use strict";
 
-		SubArt.background();
+		// SubArt.background();
 		SubArt.centralizaPaginaInicial();
+		SubArt.lightbox();
 	},
 	background: function() {
 		"use strict";
@@ -39,6 +40,16 @@ var SubArt = {
 
         return this;
     },
+    lightbox: function() {
+    	"use strict";
+
+    	lightbox.option({
+		"resizeDuration": 200,
+		"wrapAround": false,
+		"albumLabel": "Imagem %1 de %2",
+		"wrapAround": true
+		});
+    }
 }
 
 $(function() {
