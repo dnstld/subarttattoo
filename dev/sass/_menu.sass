@@ -1,8 +1,16 @@
 nav
+	.navbar-header
+		.navbar-brand
+			+icon($icon-ancora, 25)
+
+			&:before
+				vertical-align: sub
+				margin-right: 5px
+
 	.navbar-collapse
 		.redes-sociais
 			.instagram
 				+icon($icon-instagram, 20)
 				
 			.facebook
-				+icon($icon-facebook-square, 20)
+				+icon($icon-facebook, 20)
