@@ -2,8 +2,9 @@ var SubArt = {
 	init: function() {
 		"use strict";
 
-		// SubArt.background();
+		SubArt.background();
 		SubArt.centralizaPaginaInicial();
+		SubArt.navegacao();
 		SubArt.lightbox();
 	},
 	background: function() {
@@ -39,6 +40,22 @@ var SubArt = {
         $(".jumbotron").css("left", Math.max(0, (($(".pagina-inicial").width() - $(".jumbotron").outerWidth()) / 2) + $(".pagina-inicial").scrollLeft()) + "px");
 
         return this;
+    },
+    navegacao: function() {
+    	"use strict";
+
+    	$("#navbar a[href^='#']").on("click", function(e) {
+			e.preventDefault();
+			
+			$("#navbar").find("li").removeClass("active");
+			$(this).parent().addClass("active");
+
+			var hash = this.hash;
+
+			$("html, body").animate({
+				scrollTop: $(hash).offset().top
+			}, 300);
+		});
     },
     lightbox: function() {
     	"use strict";
