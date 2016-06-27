@@ -3,9 +3,9 @@ var SubArt = {
 		"use strict";
 
 		SubArt.background();
-		SubArt.centralizaPaginaInicial();
 		SubArt.navegacao();
 		SubArt.lightbox();
+		SubArt.instagram();
 	},
 	background: function() {
 		"use strict";
@@ -36,10 +36,12 @@ var SubArt = {
 	centralizaPaginaInicial: function() {
         "use strict";
 
-        $(".jumbotron").css("top", Math.max(0, (($(".pagina-inicial").height() - $(".jumbotron").outerHeight()) / 2) + $(".pagina-inicial").scrollTop()) + "px");
-        $(".jumbotron").css("left", Math.max(0, (($(".pagina-inicial").width() - $(".jumbotron").outerWidth()) / 2) + $(".pagina-inicial").scrollLeft()) + "px");
+        $(".instaImages").load(function() {
+	        $(".jumbotron").css("top", Math.max(0, (($(".pagina-inicial").height() - $(".jumbotron").outerHeight()) / 2) + $(".pagina-inicial").scrollTop()) + "px");
+	        $(".jumbotron").css("left", Math.max(0, (($(".pagina-inicial").width() - $(".jumbotron").outerWidth()) / 2) + $(".pagina-inicial").scrollLeft()) + "px");
 
-        return this;
+	        return this;
+        });
     },
     navegacao: function() {
     	"use strict";
@@ -53,7 +55,7 @@ var SubArt = {
 			var hash = this.hash;
 
 			$("html, body").animate({
-				scrollTop: $(hash).offset().top
+				scrollTop: $(hash).offset().top - 50
 			}, 300);
 		});
     },
@@ -66,9 +68,43 @@ var SubArt = {
 		"albumLabel": "Imagem %1 de %2",
 		"wrapAround": true
 		});
+    },
+    instagram: function() {
+    	"use strict";
+
+    	var accessToken = "2072847442.3a81a9f.ba226decbb1e4fe48e66c65a1ea69fcf",
+    		userId = "2072847442";
+    	// var accessToken = "1688183456.6a0c051.057e4259c5794e5191a65542d9903ec5",
+    	// 	clientId = "6a0c0512709243d0b4ec39103dba6465",
+    	// 	userId = "";
+
+    	$(".instagram-feed").on("willLoadInstagram", function(event, options) {
+    		// aqui vai o loader
+		});
+		$(".instagram-feed").on("didLoadInstagram", function(event, response) {
+			var urlThumbImg1 = response.data[0].images.thumbnail.url,
+				urlImg1 = response.data[0].link,
+				urlThumbImg2 = response.data[1].images.thumbnail.url,
+				urlImg2 = response.data[1].link,
+				urlThumbImg3 = response.data[2].images.thumbnail.url,
+				urlImg3 = response.data[2].link;
+
+			console.log(response);
+
+			$(".thumbImg1").attr("src", urlThumbImg1).parent("a").attr("href", urlImg1);
+			$(".thumbImg2").attr("src", urlThumbImg2).parent("a").attr("href", urlImg2);
+			$(".thumbImg3").attr("src", urlThumbImg3).parent("a").attr("href", urlImg3);
+
+			SubArt.centralizaPaginaInicial();
+		});
+		$(".instagram-feed").instagram({
+			userId: userId,
+			accessToken: accessToken,
+			count: 3
+		});
     }
 }
-
+ 
 $(function() {
 	"use strict";
 

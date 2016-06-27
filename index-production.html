@@ -18,14 +18,14 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<span class="navbar-brand" href="index.html">SUB ART TATTOO</span>
+					<h1 class="navbar-brand">SUB ART TATTOO</h1>
 				</div>
 				<div id="navbar" class="collapse navbar-collapse">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="#">Página inicial</a></li>
-						<li><a href="#">O estúdio</a></li>
-						<li><a href="#">Tattoo</a></li>
-						<li><a href="#">Contato</a></li>
+						<li class="active"><a href="#pagina-inicial">Início</a></li>
+						<li><a href="#estudio">O estúdio</a></li>
+						<li><a href="#tattoo">Tattoo</a></li>
+						<li><a href="#contato">Contato</a></li>
 					</ul>
 					<ul class="nav navbar-nav navbar-right redes-sociais">
 						<li><a href="https://www.instagram.com/subarttattoo" class="instagram" target="_blank"></a></li>
@@ -35,10 +35,215 @@
 			</div>
 		</nav>
 		<!-- pagina inicial -->
-		<div class="container-fluid pagina-inicial">
-			
+		<div id="pagina-inicial" class="container-fluid pagina-inicial">
+			<div class="jumbotron">
+		        <div class="row">
+					<div class="col-xs-4 col-xs-offset-4">
+						<img class="img-responsive center-block" src="assets/images/logo-subart.svg" alt="" />
+					</div>
+				</div>
+				<div class="row">
+		        	<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor, orci ornare fringilla auctor, tellus libero fringilla dolor, vulputate pretium libero elit sit amet ligula.</p>
+	        		<p><a class="btn btn-lg btn-default" href="javascript:void(0)" data-toggle="modal" data-target="#agenda">Agende sua tattoo</a></p>
+				</div>
+				<div class="row">
+					<div class="instagram-feed">
+						<a href="" target="_blank">
+							<img src="" alt="" class="instaImages thumbImg1 img-responsive img-rounded img-thumbnail">
+						</a>
+						<a href="" target="_blank">
+							<img src="" alt="" class="instaImages thumbImg2 img-responsive img-rounded img-thumbnail">
+						</a>
+						<a href="" target="_blank">
+							<img src="" alt="" class="instaImages thumbImg3 img-responsive img-rounded img-thumbnail">
+						</a>
+					</div>
+				</div>
+		    </div>
 		</div>
+		<!-- modal agenda -->
+		<div class="modal fade" id="agenda" tabindex="-1" role="dialog" aria-labelledby="agendaLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h4 class="modal-title" id="agendaLabel">Agende sua tattoo</h4>
+					</div>
+					<div class="modal-body">
+						<form method="POST" id="formulario">
+							<div class="form-group">
+							    <input type="text" class="form-control" id="nome" placeholder="Nome">
+							</div>
+							<div class="form-group">
+							    <input type="email" class="form-control" id="email" placeholder="Email">
+							</div>
+							<textarea class="form-control" rows="3" id="mensagem" placeholder="Mensagem"></textarea>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<a href="javascript:void(0)" class="btn btn-danger" data-dismiss="modal">Fechar</a>
+						<a href="" type="submit" class="btn btn-default" target="_blank">Enviar mensagem	</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- o estudio -->
+		<div id="estudio" class="container-fluid estudio">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+						<a href="assets/images/estudio/area-de-trabalho-07.jpg" data-title="Foto entrada" data-lightbox="galeria" class="hidden-sm hidden-md hidden-lg">
+							<img src="assets/images/estudio/area-de-trabalho-07.jpg" alt="" class="img-responsive img-rounded img-thumbnail thumb-mobile">
+						</a>
+						<h2>O estúdio</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum perspiciatis, fugit earum, minus molestiae neque! Sint ullam tempore, quo perferendis totam repellat, est quasi illo dolorum odio officia facere, asperiores.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum perspiciatis, fugit earum, minus molestiae neque! Sint ullam tempore, quo perferendis totam repellat, est quasi illo dolorum odio officia facere, asperiores.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum perspiciatis, fugit earum, minus molestiae neque! Sint ullam tempore, quo perferendis totam repellat, est quasi illo dolorum odio officia facere, asperiores.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum perspiciatis, fugit earum, minus molestiae neque! Sint ullam tempore, quo perferendis totam repellat, est quasi illo dolorum odio officia facere, asperiores.</p>
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+						<div class="hidden-xs col-sm-6 col-md-4">
+							<a href="assets/images/estudio/entrada.jpg" data-title="Foto entrada" data-lightbox="galeria">
+								<img src="assets/images/estudio/entrada-thumb.jpg" alt="" class="img-responsive img-rounded img-thumbnail thumbs-all">
+							</a>
+						</div>
+						<div class="hidden-xs col-sm-6 col-md-4">
+							<a href="assets/images/estudio/recepcao.jpg" data-title="Foto entrada" data-lightbox="galeria">
+								<img src="assets/images/estudio/recepcao-thumb.jpg" alt="" class="img-responsive img-rounded img-thumbnail thumbs-all">
+							</a>
+						</div>
+						<div class="hidden-xs col-sm-6 col-md-4">
+							<a href="assets/images/estudio/recepcao-02.jpg" data-title="Foto entrada" data-lightbox="galeria">
+								<img src="assets/images/estudio/recepcao-02-thumb.jpg" alt="" class="img-responsive img-rounded img-thumbnail thumbs-all">
+							</a>
+						</div>
+						<div class="hidden-xs col-sm-6 col-md-4">
+							<a href="assets/images/estudio/sala-de-espera.jpg" data-title="Foto entrada" data-lightbox="galeria">
+								<img src="assets/images/estudio/sala-de-espera-thumb.jpg" alt="" class="img-responsive img-rounded img-thumbnail thumbs-all">
+							</a>
+						</div>
+						<div class="hidden-xs col-sm-6 col-md-4">
+							<a href="assets/images/estudio/area-de-trabalho.jpg" data-title="Foto entrada" data-lightbox="galeria">
+								<img src="assets/images/estudio/area-de-trabalho-thumb.jpg" alt="" class="img-responsive img-rounded img-thumbnail thumbs-all">
+							</a>
+						</div>
+						<div class="hidden-xs col-sm-6 col-md-4">
+							<a href="assets/images/estudio/area-de-trabalho-02.jpg" data-title="Foto entrada" data-lightbox="galeria">
+								<img src="assets/images/estudio/area-de-trabalho-02-thumb.jpg" alt="" class="img-responsive img-rounded img-thumbnail thumbs-all">
+							</a>
+						</div>
+						<div class="hidden-xs col-sm-6 col-md-4">
+							<a href="assets/images/estudio/area-de-trabalho-03.jpg" data-title="Foto entrada" data-lightbox="galeria">
+								<img src="assets/images/estudio/area-de-trabalho-03-thumb.jpg" alt="" class="img-responsive img-rounded img-thumbnail thumbs-all">
+							</a>
+						</div>
+						<div class="hidden-xs col-sm-6 col-md-4">
+							<a href="assets/images/estudio/area-de-trabalho-04.jpg" data-title="Foto entrada" data-lightbox="galeria">
+								<img src="assets/images/estudio/area-de-trabalho-04-thumb.jpg" alt="" class="img-responsive img-rounded img-thumbnail thumbs-all">
+							</a>
+						</div>
+						<div class="hidden-xs col-sm-6 col-md-4">
+							<a href="assets/images/estudio/area-de-trabalho-06.jpg" data-title="Foto entrada" data-lightbox="galeria">
+								<img src="assets/images/estudio/area-de-trabalho-06-thumb.jpg" alt="" class="img-responsive img-rounded img-thumbnail thumbs-all">
+							</a>
+						</div>
+						<div class="hidden-xs col-sm-6 col-md-4">
+							<a href="assets/images/estudio/area-de-trabalho-07.jpg" data-title="Foto entrada" data-lightbox="galeria">
+								<img src="assets/images/estudio/area-de-trabalho-07-thumb.jpg" alt="" class="img-responsive img-rounded img-thumbnail thumbs-all">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+						<img src="assets/images/estudio/bill-beck.jpg" alt="" class="img-responsive img-rounded img-thumbnail">
+					</div>
+					<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+						<h1>Bill Beck</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum perspiciatis, fugit earum, minus molestiae neque! Sint ullam tempore, quo perferendis totam repellat, est quasi illo dolorum odio officia facere, asperiores.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum perspiciatis, fugit earum, minus molestiae neque! Sint ullam tempore, quo perferendis totam repellat, est quasi illo dolorum odio officia facere, asperiores.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- tattoo -->
+		<div id="tattoo" class="container-fluid tattoo">
+			<div class="container">
+				<div class="row">
+					<h2>Tattoo</h2>
+				</div>
+				<div class="row">
+					<div class="col-xs-6 col-sm-4 col-md-3">
+						<a href="assets/images/estudio/entrada.jpg" data-title="Foto entrada" data-lightbox="galeria">
+							<img src="assets/images/estudio/entrada-thumb.jpg" alt="" class="img-responsive img-rounded img-thumbnail thumbs-all">
+						</a>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3">
+						<a href="assets/images/estudio/recepcao.jpg" data-title="Foto entrada" data-lightbox="galeria">
+							<img src="assets/images/estudio/recepcao-thumb.jpg" alt="" class="img-responsive img-rounded img-thumbnail thumbs-all">
+						</a>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3">
+						<a href="assets/images/estudio/recepcao-02.jpg" data-title="Foto entrada" data-lightbox="galeria">
+							<img src="assets/images/estudio/recepcao-02-thumb.jpg" alt="" class="img-responsive img-rounded img-thumbnail thumbs-all">
+						</a>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3">
+						<a href="assets/images/estudio/sala-de-espera.jpg" data-title="Foto entrada" data-lightbox="galeria">
+							<img src="assets/images/estudio/sala-de-espera-thumb.jpg" alt="" class="img-responsive img-rounded img-thumbnail thumbs-all">
+						</a>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3">
+						<a href="assets/images/estudio/area-de-trabalho.jpg" data-title="Foto entrada" data-lightbox="galeria">
+							<img src="assets/images/estudio/area-de-trabalho-thumb.jpg" alt="" class="img-responsive img-rounded img-thumbnail thumbs-all">
+						</a>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3">
+						<a href="assets/images/estudio/area-de-trabalho-02.jpg" data-title="Foto entrada" data-lightbox="galeria">
+							<img src="assets/images/estudio/area-de-trabalho-02-thumb.jpg" alt="" class="img-responsive img-rounded img-thumbnail thumbs-all">
+						</a>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3">
+						<a href="assets/images/estudio/area-de-trabalho-03.jpg" data-title="Foto entrada" data-lightbox="galeria">
+							<img src="assets/images/estudio/area-de-trabalho-03-thumb.jpg" alt="" class="img-responsive img-rounded img-thumbnail thumbs-all">
+						</a>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3">
+						<a href="assets/images/estudio/area-de-trabalho-04.jpg" data-title="Foto entrada" data-lightbox="galeria">
+							<img src="assets/images/estudio/area-de-trabalho-04-thumb.jpg" alt="" class="img-responsive img-rounded img-thumbnail thumbs-all">
+						</a>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3">
+						<a href="assets/images/estudio/area-de-trabalho-06.jpg" data-title="Foto entrada" data-lightbox="galeria">
+							<img src="assets/images/estudio/area-de-trabalho-06-thumb.jpg" alt="" class="img-responsive img-rounded img-thumbnail thumbs-all">
+						</a>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3">
+						<a href="assets/images/estudio/area-de-trabalho-07.jpg" data-title="Foto entrada" data-lightbox="galeria">
+							<img src="assets/images/estudio/area-de-trabalho-07-thumb.jpg" alt="" class="img-responsive img-rounded img-thumbnail thumbs-all">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- contato -->
+		<div id="contato" class="container-fluid contato">
+			<div class="container">
+				<div class="row">
+					<h2>Contato</h2>
+				</div>
+			</div>
+		</div>
+		<!-- rodape -->
+		<footer class="rodape">
+			<div class="container">
+				<p class="text-muted text-center small copyright">&copy; Copyright subart.com.br - Todos os direitos reservados. Desenvolvido por <a href="denistoledo.com.br" target="_blank" class="denistoledo"><strong>Denis Toledo</strong></a></p>
+			</div>
+		</footer>
 
+		<!-- scripts -->
 		<!-- scripts -->
         <script src="dist/js/main.min.js"></script>
 	</body>

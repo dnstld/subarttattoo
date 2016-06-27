@@ -17,7 +17,8 @@
   "dependencies": {
     "bootstrap-sass": "https://github.com/twbs/bootstrap-sass.git#^3.3.6",
     "jquery": "^2.2.4",
-    "lightbox2": "^2.8.2"
+    "lightbox2": "^2.8.2",
+    "jquery-instagram": "https://github.com/potomak/jquery-instagram.git#^0.3.1"
   },
   "devDependencies": {
     "vegas": "https://github.com/jaysalvat/vegas.git#^2.2.1"
