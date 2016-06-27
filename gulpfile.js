@@ -15,7 +15,9 @@ var gulp             = require("gulp"),
 	scripts          = {
 		jquery: "vendor/jquery/dist/jquery.js",
 		bootstrap: "vendor/bootstrap-sass/assets/javascripts/bootstrap.js",
-		background: "vendor/vegas/dist/vegas.js",
+		vegas: "vendor/vegas/dist/vegas.js",
+		lightbox: "vendor/lightbox2/src/js/lightbox.js",
+		instagram: "vendor/jquery-instagram/src/instagram.js",
 		main: "dev/js/main.js"
 	};
 
@@ -68,7 +70,9 @@ gulp.task("js", function() {
 	return gulp.src([
 			scripts.jquery,
 			scripts.bootstrap,
-			scripts.background,
+			scripts.vegas,
+			scripts.lightbox,
+			scripts.instagram,
 			scripts.main
 		])
 		.pipe(concatJS("main.js"))

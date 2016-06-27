@@ -74,9 +74,6 @@ var SubArt = {
 
     	var accessToken = "2072847442.3a81a9f.ba226decbb1e4fe48e66c65a1ea69fcf",
     		userId = "2072847442";
-    	// var accessToken = "1688183456.6a0c051.057e4259c5794e5191a65542d9903ec5",
-    	// 	clientId = "6a0c0512709243d0b4ec39103dba6465",
-    	// 	userId = "";
 
     	$(".instagram-feed").on("willLoadInstagram", function(event, options) {
     		// aqui vai o loader
